@@ -21,7 +21,7 @@ function Login() {
       params.append('email', email);
       params.append('password', password);
 
-      const response = await fetch(`http://localhost:8081/auth/login?${params.toString()}`, {
+      const response = await fetch(`http://localhost:8080/user-service/auth/login?${params.toString()}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
